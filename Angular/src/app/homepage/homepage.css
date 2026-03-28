@@ -1,0 +1,38 @@
+/* Box Container für Überschriften etc. */
+.title-box {
+    background: linear-gradient(90deg, #300323, #a31b7d);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 3px solid black;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 1.8rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 90%;
+    margin: auto;
+    padding-bottom: 1px;
+}
+
+
+/* Tablet */
+@media (min-width: 768px) {
+    .title-box {
+        font-size: 2rem;
+        padding: 30px;
+        width: 53%; /* Musste so unorthodox angepasst werden, damit die schrift nicht über/untereinander lappt*/
+        margin: 0%;
+        padding-bottom: 1px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+    .title-box {
+        font-size: 2.5rem;
+        width: 45%; /* Musste so unorthodox angepasst werden, damit die schrift nicht über/untereinander lappt*/
+        padding: 40px 25px;
+        padding-bottom: 1px;
+    }
+}
