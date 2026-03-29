@@ -1,6 +1,58 @@
-.header {
+.container {
     display: flex;
     gap: 1.2rem;
     align-items: stretch;
+}
+
+.header {
+    display: flex;
+    margin-bottom: 3px;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    font-family:'Crimson Text', 'italic', Italic, Italic;
+    color: white;
+    font-size: 22px;
+}
+
+.text {
+    display: flex;
+    color: white;
+    padding: 20px;
+    border-radius: 12px; 
+    text-align: center;
+    font-size: 0.8rem;
+    width: 90%;
+    margin: 0;
+    padding-bottom: 1px;
+    justify-content: center;
+}
+
+
+
+/* Tablet */
+@media (min-width: 768px) {
+    .header {
+        font-size: 26px;
+        justify-content: center;
+        margin: 0;
+        width: 50%;
+    }
+    .text {
+        font-size: 1rem;
+        width: 47%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+    .header {
+        font-size: 30px;
+        width: 47%;
+    }
+    .text {
+        font-size: 1.6rem;
+        width: 45.25%;
+    }
 }
 
