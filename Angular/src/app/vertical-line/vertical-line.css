@@ -1,0 +1,22 @@
+:host {
+    display: none; /* Sieht auf mobile ebene nicht schön aus, deswegen ausgeblendet*/
+    width: 2px;              
+    background-color: #B40B84;
+    align-self: stretch;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    :host {
+        display: block;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+    :host {
+        display: block;
+    }
+}
