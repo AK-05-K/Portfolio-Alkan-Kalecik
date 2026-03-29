@@ -1,0 +1,27 @@
+:host {
+    display: block;
+    width: 90%;        
+    height: 2px;        
+    background-color: #7e0c5e;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 3px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    :host {
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 3px;
+        margin-left: 3px;
+        width: 48%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+    :host {
+        width: 48.75%;
+    }
+}
