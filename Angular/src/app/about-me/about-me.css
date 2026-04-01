@@ -1,3 +1,4 @@
+/* About me Startbereich */
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -71,13 +72,14 @@ app-title-box {
     .grid-container {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 65%;
+        margin-left: 4%;
     }
     .picture {
         grid-row: 1;
         grid-column: 1;
         width: 70%;
         height: 130%;
-        margin-left: 77%;
+        margin-left: 63%;
         margin-top: 15%;
     }
     .picture img {
@@ -98,7 +100,7 @@ app-title-box {
         margin-left: 47%;
         grid-column: 1;
         grid-row: 1;
-        width: 130%;
+        width: 100%;
         app-horizontal-line {
             visibility: hidden;
         }
@@ -127,6 +129,9 @@ app-title-box {
 
 /* Desktop */
 @media (min-width: 1200px) {
+    .grid-container {
+        margin-left: 0;
+    }
     .text {
         font-size: 1.6rem;
         width: 45.25%;
@@ -139,16 +144,22 @@ app-title-box {
         font-size: 50px;
     }
     .container-3:nth-child(2) {
-        width: 150%;
-        margin-left: 30%;
+        width: 100%;
+        margin-left: 50%;
     }
     .picture {
         grid-row: 1;
-        margin-left: 95%;
-        margin-top: 8%;
+        margin-left: 91%;
+        margin-top: 14%;
         width: 20%;
     }
     .picture img {
         width: 100%;
     }
+}
+
+/* Skills */
+.container-flex {
+    display: flex;
+    justify-content: center;
 }
