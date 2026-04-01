@@ -50,7 +50,7 @@ app-title-box {
 .picture {
     margin-top: 30px;
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +70,18 @@ app-title-box {
 @media (min-width: 768px) {
     .grid-container {
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 65%;
+    }
+    .picture {
+        grid-row: 1;
+        grid-column: 1;
+        width: 70%;
+        height: 130%;
+        margin-left: 77%;
+        margin-top: 15%;
+    }
+    .picture img {
+        width: 70%;
     }
     .container:nth-child(1) {
         justify-content: flex-start;   
@@ -81,9 +92,14 @@ app-title-box {
         margin-left: 40px;
     }
     .container-3:nth-child(2) {
-        grid-column: 2;
+        margin-top: 2%;
+        margin-left: 47%;
+        grid-column: 1;
         grid-row: 1;
-        width: 100%;
+        width: 130%;
+        app-horizontal-line {
+            visibility: hidden;
+        }
     }
     .container-3:nth-child(3) {
         grid-column: 1;
@@ -120,5 +136,18 @@ app-title-box {
     }
     app-title-box {
         font-size: 50px;
+    }
+    .container-3:nth-child(2) {
+        width: 150%;
+        margin-left: 30%;
+    }
+    .picture {
+        grid-row: 1;
+        margin-left: 95%;
+        margin-top: 8%;
+        width: 20%;
+    }
+    .picture img {
+        width: 100%;
     }
 }
