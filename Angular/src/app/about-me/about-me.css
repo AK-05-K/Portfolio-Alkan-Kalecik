@@ -90,6 +90,8 @@ app-title-box {
         display: flex;
         justify-content: left;
         margin-left: 40px;
+        gap: 3rem;
+        
     }
     .container-3:nth-child(2) {
         margin-top: 2%;
@@ -121,7 +123,6 @@ app-title-box {
     app-title-box {
         font-size: 40px;
     }
-    
 }
 
 /* Desktop */
