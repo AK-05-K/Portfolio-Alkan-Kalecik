@@ -90,6 +90,16 @@ ul {
     margin-right: 20%;
 }
 
+/* Education */
+.container-education {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+.container-flex:nth-child(3) {
+    grid-row: 1 / span 2;
+}
+
 /* Tablet */
 @media (min-width: 768px) {
     .grid-container {
@@ -155,6 +165,21 @@ ul {
     }
     .container-flex {
         margin-top: 2%;
+    }
+
+    /* Education */
+    .container-flex:nth-child(1) {
+        font-size: 50px;
+    }
+    .container-flex:nth-child(4) {
+        font-size: 50px;
+    }
+    .text:nth-child(5){
+        width: 100%;
+    }
+    
+    .text:nth-child(2){
+        width: 100%;
     }
 }
 
