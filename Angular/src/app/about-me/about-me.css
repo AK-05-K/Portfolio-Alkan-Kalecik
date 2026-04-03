@@ -51,14 +51,14 @@ app-title-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;    
+    width: 100%;
     overflow: hidden;
 }
 
 .picture img {
     width: clamp(1px, 40%, 400px);
-    max-width: 100%;   
-    height: auto;      
+    max-width: 100%;
+    height: auto;
     border-radius: 12px;
     border: 3px solid black
 }
@@ -86,7 +86,7 @@ app-title-box {
 
 ul {
     text-align: center;
-    list-style-position:outside;
+    list-style-position: outside;
     margin-right: 20%;
 }
 
@@ -107,6 +107,7 @@ ul {
         grid-template-rows: 1fr 65%;
         margin-left: 4%;
     }
+
     .picture {
         grid-row: 1;
         grid-column: 1;
@@ -115,39 +116,47 @@ ul {
         margin-left: 63%;
         margin-top: 15%;
     }
+
     .picture img {
         width: 70%;
     }
+
     .container:nth-child(1) {
-        justify-content: flex-start;   
+        justify-content: flex-start;
     }
+
     .container-4 {
         display: flex;
         justify-content: left;
         margin-left: 40px;
         gap: 3rem;
-        
+
     }
+
     .container-3:nth-child(2) {
         margin-top: 2%;
         margin-left: 47%;
         grid-column: 1;
         grid-row: 1;
         width: 100%;
+
         app-horizontal-line {
             visibility: hidden;
         }
     }
+
     .container-3:nth-child(3) {
         grid-column: 1;
         grid-row: 2;
     }
+
     .text {
         grid-column: 1;
         grid-row: 2;
         font-size: 1rem;
         width: 47%;
     }
+
     .header {
         font-size: 26px;
         justify-content: center;
@@ -155,31 +164,51 @@ ul {
         margin-top: 30px;
         width: 55%;
     }
+
     app-title-box {
         font-size: 40px;
     }
+
     ul {
         margin-right: 1.4rem;
         list-style-position: inside;
         padding: 0;
     }
-    .container-flex {
-        margin-top: 2%;
+
+    /* Skills */
+    .container-flex:nth-child(3) {
+        margin-top: 4rem;
     }
 
     /* Education */
+    .container-flex:nth-child(3) {
+        
+        grid-row: 1 / span 2;
+    }
+
     .container-flex:nth-child(1) {
         font-size: 50px;
     }
+
     .container-flex:nth-child(4) {
         font-size: 50px;
     }
-    .text:nth-child(5){
+
+    .container-flex:nth-child(5) {
+        margin-top: 4rem;
+    }
+
+    .text:nth-child(5) {
         width: 100%;
     }
-    
-    .text:nth-child(2){
+
+    .text:nth-child(2) {
         width: 100%;
+    }
+
+    /* Experience */
+    .container-flex:nth-child(8) {
+        margin-top: 4rem;
     }
 }
 
@@ -188,32 +217,53 @@ ul {
     .grid-container {
         margin-left: 0;
     }
+
     .text {
         font-size: 1.6rem;
         width: 45.25%;
     }
+
     .header {
         font-size: 30px;
         width: 50%;
     }
+
     app-title-box {
         font-size: 50px;
     }
+
     .container-3:nth-child(2) {
         width: 100%;
         margin-left: 50%;
     }
+
     .picture {
         grid-row: 1;
         margin-left: 91%;
         margin-top: 14%;
         width: 20%;
     }
+
     .picture img {
         width: 100%;
     }
+
     .container-flex {
         margin-top: 1%;
     }
-}
 
+    /* Skills */
+    .container-flex:nth-child(3) {
+        margin-top: 6rem;
+    }
+
+    /* Education */
+    .container-flex:nth-child(5) {
+        margin-top: 6rem;
+    }
+
+    /* Experience */
+    .container-flex:nth-child(8) {
+        margin-top: 6rem;
+    }
+}
