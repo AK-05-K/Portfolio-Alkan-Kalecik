@@ -1,0 +1,78 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container-3 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.container {
+    display: flex;
+    gap: 1.2rem;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.text {
+    display: flex;
+    justify-self: center;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    width: 90%;
+    padding-bottom: 1px;
+}
+
+.header-bigger {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Crimson Text', serif;
+    color: white;
+    font-size: 26px;
+    overflow: auto;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Crimson Text', serif;
+    color: white;
+    font-size: 22px;
+    overflow: auto;
+    text-align: center;
+}
+
+.list {
+    margin-top: 1.7rem;
+    gap: 1rem;
+    color: white;
+    justify-content: center;
+    width: 110%;
+}
+
+ul {
+    list-style-position: inside;
+    text-align: center;
+    margin-right: 20%;
+    color: white;
+}
+
+/* sieht hier schöner zentriert aus */
+app-title-box {
+    text-align: center;
+    padding: 30px;
+    font-size: 28px;
+}
+
+@media (min-width:768px) {
+    .grid-container {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 65%;
+        margin-left: 4%;
+    }
+}
